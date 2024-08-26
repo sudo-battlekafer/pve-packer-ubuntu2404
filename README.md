@@ -5,7 +5,7 @@ Packer build files for automated operating system template builds in a Proxmox e
 - Packer installed
 - Proxmox API token created
 - Proxmox Packer plugin installed `packer plugins install github.com/hashicorp/proxmox`
-- if using local ISO, download ISO from [here](https://ubuntu.com/download/server)
+- if using local ISO, download ISO from [here](https://ubuntu.com/download/server) to Proxmox
 - Debian package `whois` installed
 
 ## Instructions
