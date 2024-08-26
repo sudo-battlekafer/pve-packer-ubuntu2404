@@ -41,7 +41,7 @@ If using Option 2, please update the checksum with this command `curl https://re
 
 `variables.pkr.hcl` 
 
-### minimum updates
+### Minimum variable updates
 
 
 ```yaml
