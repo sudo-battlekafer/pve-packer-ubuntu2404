@@ -23,7 +23,7 @@ autoinstall:
     timezone: America/Chicago
     users:
       - name: ubuntu
-        passwd: "$6$rounds=4096$4SY5kMDOITTy3R6s$vgp01IwfMWJRYxY1pa.D6xS.TEzGkMpVqxZtxPQrYuHzvywq2sSw/Z.yEmG3hsWnERCorBbN7tdMttVTcj4u61"
+        passwd: "$6$rounds=4096$NOTeWFjYURSSX4j5$XWGx1L25fDWX9WDktPUnQjQaw45v33PQ9fhQB94JBYOkoDZCI/p5POd6A4z64m72OFTHktQkPqxuwakFwQufX1"
         groups: [adm, sudo]
         lock-passwd: false
         sudo: ALL=(ALL) NOPASSWD:ALL
