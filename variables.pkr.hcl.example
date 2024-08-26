@@ -1,0 +1,47 @@
+
+variable "proxmox_api_url" {
+  type = string
+  default = "https://192.168.1.100:8006/api2/json"
+}
+
+variable "proxmox_api_token_id" {
+  type = string
+  default = "root@pve!name"
+}
+
+variable "proxmox_api_token_secret" {
+  type = string
+  default = "pve token"
+  sensitive = true
+}
+
+variable "ubuntu_user_secret" {
+  type = string
+  default = "ubuntu"
+  sensitive = true
+}
+
+variable "ubuntu_user" {
+  type = string
+  default = "ubuntu"
+}
+
+variable "iso_datastore" {
+  type = string
+  default = "local"
+}
+
+variable "disk_datastore" {
+  type = string
+  default = "local-lvm"
+}
+
+variable "bridge" {
+  type = string
+  default = "vmbr0"
+}
+
+variable "ci_datastore" {
+  type = string
+  default = "local-lvm"
+}
