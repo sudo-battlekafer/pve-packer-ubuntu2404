@@ -23,7 +23,7 @@ Replace the variables in the example code with values from your own environment,
 
 `ubuntu-24.04.pkr.hcl`
 
-local ISO or download ISO (as of 8/26/2024)
+### local ISO or download ISO (as of 8/26/2024)
 
 If using Option 2, please update the checksum with this command `curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso | sha256sum` in ubuntu-24.04.pkr.hcl line 38, or else it will not work
 
@@ -41,7 +41,7 @@ If using Option 2, please update the checksum with this command `curl https://re
 
 `variables.pkr.hcl` 
 
-minimum updates
+### minimum updates
 
 
 ```yaml
@@ -62,7 +62,7 @@ variable "proxmox_api_token_secret" {
 }
 ```
 
-to use custom user in Packer template:
+## To use custom user in Packer template:
 
 1. Update variables.pkr.hcl with correct user info into `ubuntu_user` and `ubuntu_user_secret` variables, plain text
 2. run command `mkpasswd --method=SHA-512 --rounds=4096` to get hash, paste into user-data, line 26, replacing hashed password info
