@@ -37,6 +37,7 @@ local ISO or download ISO (as of 8/26/2024)
 ```
 
 `variables.pkr.hcl` 
+
 minimum updates
 
 
