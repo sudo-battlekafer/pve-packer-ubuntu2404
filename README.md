@@ -25,6 +25,10 @@ Replace the variables in the example code with values from your own environment,
 
 local ISO or download ISO (as of 8/26/2024)
 
+
+If using Option 2, please update the checksum with this command `curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso | sha256sum` in ubuntu-24.04.pkr.hcl line 38 or else it will not work
+
+
 ```yaml
     # VM OS Settings
     # (Option 1) Local ISO File
@@ -33,7 +37,6 @@ local ISO or download ISO (as of 8/26/2024)
     # (Option 2) Download ISO
     # iso_url = "https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso"
     # iso_checksum = "84aeaf7823c8c61baa0ae862d0a06b03409394800000b3235854a6b38eb4856f"
-
 ```
 
 `variables.pkr.hcl` 

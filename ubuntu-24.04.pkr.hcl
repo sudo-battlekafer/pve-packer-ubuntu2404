@@ -36,6 +36,7 @@ source "proxmox-iso" "ubuntu-server-24-04" {
     # (Option 2) Download ISO
     # iso_url = "https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso"
     # iso_checksum = "84aeaf7823c8c61baa0ae862d0a06b03409394800000b3235854a6b38eb4856f"
+    # command to update checksum is curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso | sha256sum
     iso_storage_pool = "${var.iso_datastore}"
     unmount_iso = true
     template_name        = "packer-ubuntu2404"
